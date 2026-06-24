@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frontend developer portfolio showcasing projects, skills and responsive web design work.">
+    <title>Contact | Archie Yeantee</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        :root {
+            --accent--: rgb(8, 8, 4);
+            --black--: #000000;
+            --pure--: #ffffff;
+            --bg-color--: #0000ff;
+        }
+
+        form {
+            border: 2px solid #4CAF50;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            max-width: 500px;
+            margin: auto;
+            margin-bottom: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-container">
+        <a href="index.html"><img src="images/logo.jpg" alt="Archie Yeantee Logo" class="logo"></a>
+
+        <nav class="nav-section">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro-section">
+            <h1>Get In Touch</h1>
+            <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+        </section>
+
+        <section class="contact-container">
+            <section class="contact-section">
+                <h2>Quick Contact</h2>
+                <p>You can also reach me via Google Form:</p>
+
+                <ul>
+                    <li><span>📧</span> Email:
+                        <a href="mailto:yeanteearchie2005@gmail.com">yeanteearchie2005@gmail.com</a>
+                    </li>
+
+                    </li>
+                    <li><span>📱</span> WhatsApp: +91 769-612-0946
+                    </li>
+
+                    <li><span>📱</span> WhatsApp: +91 734-096-4608
+                    </li>
+ZXC 
+                    <li><span>📍</span> Address: Chd. Road, Ramgarh, Ludhiana, <span class="address-span">Punjab,
+                            India</span></li>
+
+                </ul>
+                <a class="contact-btn btn"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScw9-W-nKfPhWWFc4MaR-NfOBFhN45ReKIezMs9sKKZvnHryg/viewform?usp=publish-editor"
+                    target="_blank" rel="noopener noreferrer">Open
+                    Contact Form</a>
+
+            </section>
+        </section>
+
+        <section id="contact-form-container">
+            <form action="#" method="post">
+                <h1>Contact Me</h1>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text" placeholder="First Name" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" placeholder="Last Name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+
+                <!-- Country -->
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">-- Select --</option>
+                        <option value="liberia">Liberia</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="sierra-leone">Sierra Leone</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <!-- Submit -->
+                <div class="button-container">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+
+        <article class="article-container">
+            <div id="social-media">
+                <h2>Follow Me</h2>
+                <p>Stay updated with my latest projects and articles.</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/archie-karpah-yeantee-6447b0268" target="_blank"
+                            rel="noopener noreferrer"><span>➜</span> LinkedIn</a></li>
+                    <li><a href="https://github.com/Archieyeantee" target="_blank"
+                            rel="noopener noreferrer"><span>➜</span> GitHub</a></li>
+                    <li><a href="https://www.instagram.com/archieyeantee/?__pwa=1#" target="_blank"
+                            rel="noopener noreferrer"><span>➜</span>
+                            Instagram</a></li>
+                    <li><a href="https://www.facebook.com/archie.yeantee.1" target="_blank"
+                            rel="noopener noreferrer"><span>➜</span> Facebook</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="quick-link">
+                <h2>Quick Links</h2>
+                <p>Explore my portfolio sections.</p>
+                <ul>
+                    <li><a href="index.html"><span>➜</span> Home</a></li>
+                    <li><a href="about.html"><span>➜</span> About</a></li>
+                    <li><a href="contact.html"><span>➜</span> Contact</a></li>
+                    <li><a href="projects.html"><span>➜</span> Projects</a></li>
+                    <li><a href="skills.html"><span>➜</span> Skills</a></li>
+                </ul>
+            </div>
+
+            <div class="instant-whatsapp">
+                <a href="https://wa.me/917696120946" target="_blank" rel="noopener noreferrer"><img
+                        src="images/whatsapp-icon.jpg" alt="WhatsApp"></a>
+
+            </div>
+
+            <div>
+                <button id="goTopBtn" title="Go to top"><span>⬆ Go To Top</span></button>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio-Archie. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
