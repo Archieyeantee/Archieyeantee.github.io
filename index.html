@@ -5,152 +5,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Frontend developer portfolio showcasing projects, skills and responsive web design work.">
-    <title>Archie Yeantee | Frontend Developer</title>
-    <link rel="stylesheet" href="styles.css">
+        content="Portfolio of Archie Yeantee, a B.Sc. Information Technology student and aspiring software developer learning frontend development, Python, and AI.">
+    <title>Archie Yeantee | Developer Portfolio</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons (Optional/Recommended) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
-    <header id="header">
-        <div class="header-container">
-            <a id="home" href="#home"><img src="images/logo.jpg" alt="Archie Yeantee Logo"></a>
-            <nav class="nav-section">
-                <a class="active" href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="projects.html">Projects</a>
-                <a href="skills.html">Skills</a>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Archie<span>.Portfolio</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero-section">
-
-        <div class="hero-content">
-
-            <p>Hello, I'm</p>
-
-            <h1>Archie Yeantee</h1>
-
-            <h2>Frontend Developer</h2>
-
-            <p>
-                Building responsive and user-friendly websites while
-                continuously learning modern web development.
-            </p>
-
-            <a href="projects.html" class="hero-btn btn">
-                View Projects
-            </a>
-
-        </div>
-
-        <div class="hero-image">
-            <img src="images/archie2.jpeg" alt="Archie Yeantee">
-        </div>
-
-    </section>
-
     <main>
-        <section class="intro-section">
-
-            <h1>Let's Work Together</h1>
-
-            <p>
-                Whether you have a project, collaboration idea,
-                or simply want to connect, I'd love to hear from you.
-            </p>
-
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Welcome to my space</span>
+                    <h1>Hi, I'm <span class="highlight">Archie Yeantee</span></h1>
+                    <p class="hero-subtitle">B.Sc. IT Student | Frontend Developer | Python & AI Enthusiast</p>
+                    <p class="hero-description">
+                        Building responsive, accessible web applications and exploring intelligent solutions through
+                        modern web technologies and Python.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- EDIT: Replace src with your profile photo path (e.g., assets/images/profile.jpg) -->
+                    <img src="images/profile-placeholder.jpeg" alt="Profile Picture" class="hero-image">
+                </div>
+            </div>
         </section>
 
-        <section id="section-container">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
-                <a href="about.html" class="btn">
-                    Read More
-                </a>
-            </section>
-
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <p>You can reach me at <a href="mailto:yeanteearchie2005@gmail.com" target="_blank"
-                        rel="noopener noreferrer">yeanteearchie2005@gmail.com</a></p>
-
-                <a href="contact.html" class="btn">
-                    Read More
-                </a>
-
-            </section>
-
-            <section id="projects">
-                <h2>My Projects</h2>
-                <p>Here are some of my recent projects.</p>
-                <a href="projects.html" class="btn">
-                    Read More
-                </a>
-            </section>
-
-            <section id="skills">
-                <h2>My Skills</h2>
-                <p>Here are some of the skills I have acquired.</p>
-                <a href="skills.html" class="btn">
-                    Read More
-                </a>
-            </section>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am currently pursuing my B.Sc. in Information Technology. My core focus lies in frontend
+                            development, creating intuitive and user-friendly digital experiences, and learning how to
+                            integrate AI technologies into real-world software.
+                        </p>
+                        <p>
+                            I strive to write clean, maintainable code and continuously expand my stack to keep up with
+                            industry standards.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <h3>Education</h3>
+                            <p>B.Sc. Information Technology</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Focus</h3>
+                            <p>Frontend Web Development & AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <article class="article-container">
-            <div id="social-media">
-                <h2>Follow Me</h2>
-                <p>Stay updated with my latest projects and articles.</p>
-                <ul>
-
-                    <li><a href="https://www.linkedin.com/in/archie-karpah-yeantee-6447b0268" target="_blank"
-                            rel="noopener noreferrer"><span>➜</span> LinkedIn</a></li>
-                    <li><a href="https://github.com/Archieyeantee" target="_blank"
-                            rel="noopener noreferrer"><span>➜</span> GitHub</a></li>
-
-                    <li><a href="https://www.instagram.com/archieyeantee/?__pwa=1#" target="_blank"
-                            rel="noopener noreferrer"><span>➜</span>
-                            Instagram</a></li>
-
-                    <li><a href="https://www.facebook.com/archie.yeantee.1" target="_blank"
-                            rel="noopener noreferrer"><span>➜</span> Facebook</a>
-                    </li>
-                </ul>
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3 / Flexbox / Grid</span>
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">WordPress</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages & AI</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI Fundamentals</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Workflow</h3>
+                        <div class="tags">
+                            <span class="tag">Git & GitHub</span>
+                            <span class="tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
 
-            <div id="quick-link">
-                <h2>Quick Links</h2>
-                <p>Explore my portfolio sections.</p>
-                <ul>
-                    <li><a href="#home"><span>➜</span> Home</a></li>
-                    <li><a href="about.html"><span>➜</span> About</a></li>
-                    <li><a href="contact.html"><span>➜</span> Contact</a></li>
-                    <li><a href="projects.html"><span>➜</span> Projects</a></li>
-                    <li><a href="skills.html"><span>➜</span> Skills</a></li>
-                </ul>
+                    <!-- PROJECT CARD TEMPLATE (Copy/Paste to add more projects) -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <!-- EDIT: Replace src with your project preview image -->
+                            <img src="images/project-placeholder.png" alt="Project Preview" class="project-img">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">
+                                This portfolio website showcases my skills, projects, and contact information. Built
+                                with HTML, CSS, and JavaScript, it is fully responsive and optimized for performance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-pill">HTML</span>
+                                <span class="tech-pill">CSS</span>
+                                <span class="tech-pill">JS</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- EDIT: Update href links to your repositories and live demos -->
+                                <a href="#" target="_blank" class="btn-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i>
+                                    Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- END PROJECT CARD TEMPLATE -->
+
+                    <!-- Example In-Progress Card -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/project-placeholder-2.png" alt="Project Preview" class="project-img">
+                            <span class="status-badge progress">In Progress</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Tuah's Printing Center</h3>
+                            <p class="project-desc">
+                                It is a project that is currently under development. The goal is to create a comprehensive printing service platform that allows users to customize and order print materials online.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-pill">HTML</span>
+                                <span class="tech-pill">CSS</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <a href="#" target="_blank" class="btn-link"><i class="fab fa-github"></i> Code</a> -->
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
+        </section>
 
-            <div class="instant-whatsapp">
-                <a href="https://wa.me/917696120946" target="_blank" rel="noopener noreferrer"><img
-                        src="images/whatsapp-icon.jpg" alt="WhatsApp"></a>
-
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Connect with me</h3>
+                        <!-- EDIT: Replace with your actual email and social links -->
+                        <p><i class="fas fa-envelope"></i> yeanteearchie2005@gmail.com</p>
+                        <p><a href="https://wa.me/917696120946" target="_blank" rel="noopener noreferrer"><i
+                                    class="fa-brands fa-whatsapp"></i>
+                                +91 76961 20946 </a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chandigarh, India</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Archieyeantee" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/archie-karpah-yeantee-6447b0268" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/archie.yeantee.1" target="_blank"
+                                rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div>
-                <button id="goTopBtn" title="Go to top"><span>⬆ Go To Top</span></button>
-            </div>
-        </article>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio-Archie. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Archie Yeantee Portfolio. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
